@@ -1,6 +1,7 @@
 // Mixins Here
 
 .display-flex(@direction: row; @justify: space-between; @align: stretch) {
+	display: flex;
 	flex-direction: @direction;
 	justify-content: @justify;
 	align-items: @align;
@@ -15,7 +16,7 @@
 	color: @btn-font-color;
 	font-size: 1.3rem;
 	border-radius: @radius-border;
-	padding: 2% 0;
+	padding: 3% 0;
 }
 
 .main-button-phone(@color-background: @btn-bg-color, @btn-font-color: white, @radius-border: 5px ) {

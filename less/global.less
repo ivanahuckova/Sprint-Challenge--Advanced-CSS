@@ -40,15 +40,9 @@ p {
 	line-height: 1.4;
 }
 
-.container {
-	max-width: 800px;
-	width: 100%;
-	margin: 0 auto;
-}
-
 a {
 	text-decoration: none;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	color: @river-bend;
 
 	@media @phone {
@@ -58,8 +52,18 @@ a {
 	}
 }
 
+.container {
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.selected {
+	font-weight: bold;
+}
+
 .animation-rotate {
-	animation: rotate 3s infinite;
+	animation: rotate 5s 1;
 	animation-timing-function: cubic-bezier(1, 0, 0.5, 1);
 }
 
