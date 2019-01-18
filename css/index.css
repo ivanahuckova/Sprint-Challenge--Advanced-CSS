@@ -175,6 +175,18 @@ a {
     font-size: 1.6rem;
   }
 }
+.animation-rotate {
+  animation: rotate 3s infinite;
+  animation-timing-function: cubic-bezier(1, 0, 0.5, 1);
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
 nav {
   background: #f6f6f6;
   font-family: #454a59;
@@ -192,6 +204,7 @@ nav {
   width: 100%;
   display: flex;
   padding: 1% 0;
+  animation: none;
 }
 @media (max-width: 500px) {
   .container .container-logo {

@@ -57,3 +57,19 @@ a {
 		}
 	}
 }
+
+.animation-rotate {
+	animation: rotate 3s infinite;
+	animation-timing-function: cubic-bezier(1, 0, 0.5, 1);
+}
+
+// Animations
+
+@keyframes rotate {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
