@@ -76,6 +76,13 @@ a {
 	animation-timing-function: cubic-bezier(1, 0, 0.5, 1);
 }
 
+.animation-fly {
+	animation: fly 3s 1;
+	animation-timing-function: cubic-bezier(0.69, 0.1, 1, 0.1);
+	position: relative;
+	top: 0;
+}
+
 // Animations
 
 @keyframes rotate {
@@ -84,5 +91,11 @@ a {
 	}
 	to {
 		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes fly {
+	50% {
+		top: -500px;
 	}
 }

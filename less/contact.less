@@ -1,5 +1,60 @@
-.container-contact {
-	display: flex;
-	.display-flex(row, center, center);
-	margin: 5% 0;
+.contact {
+	margin-top: 5%;
+	.display-flex(column-reverse, space-between, center);
+	.container-contact-image {
+		margin: 6% 3%;
+		width: 70%;
+		img {
+			width: 100%;
+		}
+	}
+	.container-contact-form {
+		margin: 0 3%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 60%;
+
+		.form-row {
+			display: flex;
+			flex-direction: row;
+			justify-items: space-evenly;
+			width: 80%;
+			margin: 2% 0;
+
+			label {
+				width: 20%;
+			}
+
+			input {
+				width: 70%;
+				.rounded-borders();
+				border: 1px solid @waterloo;
+			}
+
+			.radio-column {
+				width: 70%;
+				display: flex;
+				flex-direction: column;
+				font-size: 1.3rem;
+				input {
+					width: 8%;
+				}
+			}
+		}
+
+		.btn {
+			.main-button();
+			width: 20%;
+			padding: 1.5% 1%;
+			margin-top: 2%;
+
+			&:hover {
+				.main-button-inverse();
+				width: 20%;
+				padding: 1% 1%;
+				margin-top: 2%;
+			}
+		}
+	}
 }
