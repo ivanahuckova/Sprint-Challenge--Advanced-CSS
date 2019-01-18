@@ -1,7 +1,19 @@
 // Mixins Here
 
-.flex-mixin(@direction: row; @justify: space-between; @align: stretch) {
+.display-flex(@direction: row; @justify: space-between; @align: stretch) {
 	flex-direction: @direction;
 	justify-content: @justify;
 	align-items: @align;
+}
+
+.rounded-borders(@radius-border: 10px) {
+	border-radius: @radius-border;
+}
+
+.main-button(@color-background: @btn-bg-color, @btn-font-color: white, @radius-border: 5px ) {
+	background-color: @color-background;
+	color: @btn-font-color;
+	font-size: 1.3rem;
+	border-radius: @radius-border;
+	padding: 2% 0;
 }
