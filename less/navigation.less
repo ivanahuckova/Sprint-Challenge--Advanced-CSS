@@ -1,1 +1,38 @@
 // Navigation code here
+
+nav {
+	background: @nav-bg;
+	font-family: @nav-font;
+	border-bottom: 1px solid @nav-border;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.container {
+	.display-flex(column, center, center);
+	.container-logo {
+		.display-flex(row, center, center);
+		width: 100%;
+		display: flex;
+		padding: 1% 0;
+		animation: none;
+
+		@media @phone {
+			padding: 3% 0;
+		}
+	}
+	.container-navigation {
+		.display-flex(row, center, center);
+		width: 100%;
+		padding: 1% 0;
+		a {
+			padding: 0 2%;
+
+			@media @phone {
+				padding: 0 2% 2% 2%;
+			}
+		}
+	}
+}
