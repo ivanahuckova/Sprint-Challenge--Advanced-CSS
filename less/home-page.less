@@ -114,4 +114,56 @@
 			border-radius: 10px;
 		}
 	}
+
+	.newsletter {
+		margin-top: 60px;
+		border-top: 1px solid @main-border-color;
+		padding: 50px 60px;
+		display: flex;
+		justify-content: center;
+
+		@media @phone {
+			margin-top: 20px;
+			flex-wrap: wrap-reverse;
+			padding: 20px;
+		}
+	}
+
+	.newsletter-text {
+		width: 50%;
+		@media @phone {
+			width: 100%;
+		}
+
+		h3 {
+			margin-bottom: 10px;
+			@media @phone {
+				margin-top: 15px;
+			}
+		}
+
+		p {
+			margin-bottom: 26px;
+		}
+
+		.btn {
+			display: flex;
+			justify-content: center;
+			width: 25%;
+			margin-bottom: 5%;
+			.main-button();
+
+			@media @phone {
+				width: 100%;
+				.main-button-phone();
+			}
+
+			&:hover {
+				.main-button-inverse();
+				@media @phone {
+					.main-button-inverse-phone();
+				}
+			}
+		}
+	}
 } // home
