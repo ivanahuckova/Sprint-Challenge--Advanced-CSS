@@ -156,7 +156,14 @@ h2 {
 h3 {
   font-size: 2.8rem;
 }
+h3 {
+  font-size: 2rem;
+}
 p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+label {
   font-size: 1.6rem;
   line-height: 1.4;
 }
@@ -366,6 +373,55 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup h3 {
+  padding: 30px;
+  align-self: center;
+}
+.signup .form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.signup .form-container .form-row {
+  display: flex;
+  flex-direction: row;
+  justify-items: space-between;
+}
+.signup .form-container .form-row label {
+  width: 20%;
+}
+.signup .form-container .form-row input {
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #81848e;
+}
+.signup .form-container .form-row .btn {
+  background-color: #22283a;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  padding: 3% 0;
+  width: 100%;
+  padding: 1% 1%;
+  margin-top: 2%;
+}
+.signup .form-container .form-row .btn:hover {
+  background-color: white;
+  color: #22283a;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  padding: 2% 0;
+  cursor: pointer;
+  width: 100%;
+  padding: 1% 1%;
+  margin-top: 2%;
 }
 .container-contact {
   display: flex;
